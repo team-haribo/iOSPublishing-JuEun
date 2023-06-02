@@ -88,3 +88,5 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+HARIBO.xcodeproj/project.xcworkspace/xcuserdata/kimjueun.xcuserdatad/UserInterfaceState.xcuserstate
