@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B3682CB2A29C2D30034C58C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3682CA2A29C2D30034C58C /* AppDelegate.swift */; };
+		9B3682CD2A29C2D30034C58C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3682CC2A29C2D30034C58C /* SceneDelegate.swift */; };
+		9B3682CF2A29C2D30034C58C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3682CE2A29C2D30034C58C /* ViewController.swift */; };
+		9B3682D52A29C2D30034C58C /* HARIBO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B3682D32A29C2D30034C58C /* HARIBO.xcdatamodeld */; };
+		9B3682D72A29C2D40034C58C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B3682D62A29C2D40034C58C /* Assets.xcassets */; };
+		9B3682DA2A29C2D40034C58C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B3682D82A29C2D40034C58C /* LaunchScreen.storyboard */; };
+		9B3682E72A29C37A0034C58C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3682E62A29C37A0034C58C /* HomeViewController.swift */; };
+		9B3682EB2A29C4810034C58C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3682EA2A29C4810034C58C /* BaseViewController.swift */; };
+		9B3682EE2A29C5070034C58C /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 9B3682ED2A29C5070034C58C /* Then */; };
+		9B3682F12A29C50F0034C58C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9B3682F02A29C50F0034C58C /* SnapKit */; };
+		9B3682F42A29C6610034C58C /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3682F32A29C6610034C58C /* UIView + Extension.swift */; };
+		9B3682FF2A29C76D0034C58C /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3682F62A29C76D0034C58C /* Pretendard-Bold.otf */; };
+		9B3683002A29C76D0034C58C /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3682F72A29C76D0034C58C /* Pretendard-ExtraBold.otf */; };
+		9B3683012A29C76D0034C58C /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3682F82A29C76D0034C58C /* Pretendard-Black.otf */; };
+		9B3683022A29C76D0034C58C /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3682F92A29C76D0034C58C /* Pretendard-Medium.otf */; };
+		9B3683032A29C76D0034C58C /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3682FA2A29C76D0034C58C /* Pretendard-Thin.otf */; };
+		9B3683042A29C76D0034C58C /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3682FB2A29C76D0034C58C /* Pretendard-Light.otf */; };
+		9B3683052A29C76D0034C58C /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3682FC2A29C76D0034C58C /* Pretendard-Regular.otf */; };
+		9B3683062A29C76D0034C58C /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3682FD2A29C76D0034C58C /* Pretendard-ExtraLight.otf */; };
+		9B3683072A29C76D0034C58C /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3682FE2A29C76D0034C58C /* Pretendard-SemiBold.otf */; };
+		9B3683092A29C8290034C58C /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3683082A29C8290034C58C /* UIButton + Extension.swift */; };
+		9B36830C2A29C83F0034C58C /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B36830B2A29C83F0034C58C /* UILabel + Extension.swift */; };
+		9B36830F2A29C8A00034C58C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B36830E2A29C8A00034C58C /* TabBarViewController.swift */; };
+		9B3683112A29CA000034C58C /* OutingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3683102A29CA000034C58C /* OutingViewController.swift */; };
+		9B3683142A29CA230034C58C /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3683132A29CA230034C58C /* StatusViewController.swift */; };
+		9B3683162A29CAA40034C58C /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3683152A29CAA40034C58C /* UIColor + Extension.swift */; };
+		9B3683192A29D5C50034C58C /* SetStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3683182A29D5C50034C58C /* SetStackView.swift */; };
+		9B36831B2A29D6410034C58C /* SetStudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B36831A2A29D6410034C58C /* SetStudentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9B3682C72A29C2D30034C58C /* HARIBO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HARIBO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B3682CA2A29C2D30034C58C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B3682CC2A29C2D30034C58C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9B3682CE2A29C2D30034C58C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B3682D42A29C2D30034C58C /* HARIBO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HARIBO.xcdatamodel; sourceTree = "<group>"; };
+		9B3682D62A29C2D40034C58C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B3682D92A29C2D40034C58C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B3682DB2A29C2D40034C58C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B3682E62A29C37A0034C58C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9B3682EA2A29C4810034C58C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9B3682F32A29C6610034C58C /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		9B3682F62A29C76D0034C58C /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		9B3682F72A29C76D0034C58C /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		9B3682F82A29C76D0034C58C /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
+		9B3682F92A29C76D0034C58C /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		9B3682FA2A29C76D0034C58C /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		9B3682FB2A29C76D0034C58C /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
+		9B3682FC2A29C76D0034C58C /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		9B3682FD2A29C76D0034C58C /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
+		9B3682FE2A29C76D0034C58C /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		9B3683082A29C8290034C58C /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
+		9B36830B2A29C83F0034C58C /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
+		9B36830E2A29C8A00034C58C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		9B3683102A29CA000034C58C /* OutingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutingViewController.swift; sourceTree = "<group>"; };
+		9B3683132A29CA230034C58C /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		9B3683152A29CAA40034C58C /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
+		9B3683182A29D5C50034C58C /* SetStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetStackView.swift; sourceTree = "<group>"; };
+		9B36831A2A29D6410034C58C /* SetStudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetStudentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B3682C42A29C2D30034C58C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B3682EE2A29C5070034C58C /* Then in Frameworks */,
+				9B3682F12A29C50F0034C58C /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B3682BE2A29C2D30034C58C = {
+			isa = PBXGroup;
+			children = (
+				9B3682C92A29C2D30034C58C /* HARIBO */,
+				9B3682C82A29C2D30034C58C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B3682C82A29C2D30034C58C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B3682C72A29C2D30034C58C /* HARIBO.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B3682C92A29C2D30034C58C /* HARIBO */ = {
+			isa = PBXGroup;
+			children = (
+				9B3682E42A29C3570034C58C /* Utility */,
+				9B3682E22A29C3420034C58C /* Soureces */,
+				9B3682E12A29C3370034C58C /* App */,
+				9B3682CE2A29C2D30034C58C /* ViewController.swift */,
+				9B3682D62A29C2D40034C58C /* Assets.xcassets */,
+				9B3682D82A29C2D40034C58C /* LaunchScreen.storyboard */,
+				9B3682DB2A29C2D40034C58C /* Info.plist */,
+				9B3682D32A29C2D30034C58C /* HARIBO.xcdatamodeld */,
+			);
+			path = HARIBO;
+			sourceTree = "<group>";
+		};
+		9B3682E12A29C3370034C58C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9B3682CA2A29C2D30034C58C /* AppDelegate.swift */,
+				9B3682CC2A29C2D30034C58C /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9B3682E22A29C3420034C58C /* Soureces */ = {
+			isa = PBXGroup;
+			children = (
+				9B36830E2A29C8A00034C58C /* TabBarViewController.swift */,
+				9B3682E92A29C4730034C58C /* BaseVC */,
+				9B3682E32A29C34F0034C58C /* Presentation */,
+			);
+			path = Soureces;
+			sourceTree = "<group>";
+		};
+		9B3682E32A29C34F0034C58C /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				9B3683122A29CA160034C58C /* statusVC */,
+				9B3682E82A29C45C0034C58C /* outingVC */,
+				9B3682E52A29C36C0034C58C /* homeVC */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		9B3682E42A29C3570034C58C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9B3683172A29D5B70034C58C /* Set */,
+				9B3682F52A29C7460034C58C /* Font */,
+				9B3682F22A29C64F0034C58C /* Extension */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		9B3682E52A29C36C0034C58C /* homeVC */ = {
+			isa = PBXGroup;
+			children = (
+				9B3682E62A29C37A0034C58C /* HomeViewController.swift */,
+			);
+			path = homeVC;
+			sourceTree = "<group>";
+		};
+		9B3682E82A29C45C0034C58C /* outingVC */ = {
+			isa = PBXGroup;
+			children = (
+				9B3683102A29CA000034C58C /* OutingViewController.swift */,
+			);
+			path = outingVC;
+			sourceTree = "<group>";
+		};
+		9B3682E92A29C4730034C58C /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				9B3682EA2A29C4810034C58C /* BaseViewController.swift */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		9B3682F22A29C64F0034C58C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9B3682F32A29C6610034C58C /* UIView + Extension.swift */,
+				9B3683082A29C8290034C58C /* UIButton + Extension.swift */,
+				9B36830B2A29C83F0034C58C /* UILabel + Extension.swift */,
+				9B3683152A29CAA40034C58C /* UIColor + Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9B3682F52A29C7460034C58C /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				9B3682F82A29C76D0034C58C /* Pretendard-Black.otf */,
+				9B3682F62A29C76D0034C58C /* Pretendard-Bold.otf */,
+				9B3682F72A29C76D0034C58C /* Pretendard-ExtraBold.otf */,
+				9B3682FD2A29C76D0034C58C /* Pretendard-ExtraLight.otf */,
+				9B3682FB2A29C76D0034C58C /* Pretendard-Light.otf */,
+				9B3682F92A29C76D0034C58C /* Pretendard-Medium.otf */,
+				9B3682FC2A29C76D0034C58C /* Pretendard-Regular.otf */,
+				9B3682FE2A29C76D0034C58C /* Pretendard-SemiBold.otf */,
+				9B3682FA2A29C76D0034C58C /* Pretendard-Thin.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		9B3683122A29CA160034C58C /* statusVC */ = {
+			isa = PBXGroup;
+			children = (
+				9B3683132A29CA230034C58C /* StatusViewController.swift */,
+			);
+			path = statusVC;
+			sourceTree = "<group>";
+		};
+		9B3683172A29D5B70034C58C /* Set */ = {
+			isa = PBXGroup;
+			children = (
+				9B3683182A29D5C50034C58C /* SetStackView.swift */,
+				9B36831A2A29D6410034C58C /* SetStudentView.swift */,
+			);
+			path = Set;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B3682C62A29C2D30034C58C /* HARIBO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B3682DE2A29C2D40034C58C /* Build configuration list for PBXNativeTarget "HARIBO" */;
+			buildPhases = (
+				9B3682C32A29C2D30034C58C /* Sources */,
+				9B3682C42A29C2D30034C58C /* Frameworks */,
+				9B3682C52A29C2D30034C58C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HARIBO;
+			packageProductDependencies = (
+				9B3682ED2A29C5070034C58C /* Then */,
+				9B3682F02A29C50F0034C58C /* SnapKit */,
+			);
+			productName = HARIBO;
+			productReference = 9B3682C72A29C2D30034C58C /* HARIBO.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B3682BF2A29C2D30034C58C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					9B3682C62A29C2D30034C58C = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 9B3682C22A29C2D30034C58C /* Build configuration list for PBXProject "HARIBO" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B3682BE2A29C2D30034C58C;
+			packageReferences = (
+				9B3682EC2A29C5070034C58C /* XCRemoteSwiftPackageReference "Then" */,
+				9B3682EF2A29C50F0034C58C /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = 9B3682C82A29C2D30034C58C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B3682C62A29C2D30034C58C /* HARIBO */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B3682C52A29C2D30034C58C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B3683072A29C76D0034C58C /* Pretendard-SemiBold.otf in Resources */,
+				9B3682DA2A29C2D40034C58C /* LaunchScreen.storyboard in Resources */,
+				9B3683042A29C76D0034C58C /* Pretendard-Light.otf in Resources */,
+				9B3683062A29C76D0034C58C /* Pretendard-ExtraLight.otf in Resources */,
+				9B3682FF2A29C76D0034C58C /* Pretendard-Bold.otf in Resources */,
+				9B3683032A29C76D0034C58C /* Pretendard-Thin.otf in Resources */,
+				9B3683052A29C76D0034C58C /* Pretendard-Regular.otf in Resources */,
+				9B3683002A29C76D0034C58C /* Pretendard-ExtraBold.otf in Resources */,
+				9B3682D72A29C2D40034C58C /* Assets.xcassets in Resources */,
+				9B3683012A29C76D0034C58C /* Pretendard-Black.otf in Resources */,
+				9B3683022A29C76D0034C58C /* Pretendard-Medium.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B3682C32A29C2D30034C58C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B3682E72A29C37A0034C58C /* HomeViewController.swift in Sources */,
+				9B3682D52A29C2D30034C58C /* HARIBO.xcdatamodeld in Sources */,
+				9B3683192A29D5C50034C58C /* SetStackView.swift in Sources */,
+				9B3682CF2A29C2D30034C58C /* ViewController.swift in Sources */,
+				9B3683162A29CAA40034C58C /* UIColor + Extension.swift in Sources */,
+				9B3683112A29CA000034C58C /* OutingViewController.swift in Sources */,
+				9B3683142A29CA230034C58C /* StatusViewController.swift in Sources */,
+				9B3682CB2A29C2D30034C58C /* AppDelegate.swift in Sources */,
+				9B3682F42A29C6610034C58C /* UIView + Extension.swift in Sources */,
+				9B36831B2A29D6410034C58C /* SetStudentView.swift in Sources */,
+				9B3682CD2A29C2D30034C58C /* SceneDelegate.swift in Sources */,
+				9B36830C2A29C83F0034C58C /* UILabel + Extension.swift in Sources */,
+				9B3682EB2A29C4810034C58C /* BaseViewController.swift in Sources */,
+				9B36830F2A29C8A00034C58C /* TabBarViewController.swift in Sources */,
+				9B3683092A29C8290034C58C /* UIButton + Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9B3682D82A29C2D40034C58C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B3682D92A29C2D40034C58C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B3682DC2A29C2D40034C58C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9B3682DD2A29C2D40034C58C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B3682DF2A29C2D40034C58C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HARIBO/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuentuenna.HARIBO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B3682E02A29C2D40034C58C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HARIBO/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuentuenna.HARIBO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B3682C22A29C2D30034C58C /* Build configuration list for PBXProject "HARIBO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B3682DC2A29C2D40034C58C /* Debug */,
+				9B3682DD2A29C2D40034C58C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B3682DE2A29C2D40034C58C /* Build configuration list for PBXNativeTarget "HARIBO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B3682DF2A29C2D40034C58C /* Debug */,
+				9B3682E02A29C2D40034C58C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9B3682EC2A29C5070034C58C /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		9B3682EF2A29C50F0034C58C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9B3682ED2A29C5070034C58C /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B3682EC2A29C5070034C58C /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		9B3682F02A29C50F0034C58C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B3682EF2A29C50F0034C58C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		9B3682D32A29C2D30034C58C /* HARIBO.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9B3682D42A29C2D30034C58C /* HARIBO.xcdatamodel */,
+			);
+			currentVersion = 9B3682D42A29C2D30034C58C /* HARIBO.xcdatamodel */;
+			path = HARIBO.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9B3682BF2A29C2D30034C58C /* Project object */;
+}
