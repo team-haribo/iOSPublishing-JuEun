@@ -9,9 +9,8 @@ import UIKit
 
 class HomeViewController: BaseViewController {
     private let gomsLabel = UILabel().then {
-        $0.text = "GOMS"
+        $0.setLabel(text: "GOMS", fName: "pretendard-SemiBold", size: 22)
         $0.textColor = .orangeCustom
-        $0.font = UIFont(name: "pretendard-SemiBold", size: 22)
     }
     
     private let profileImage = UIImageView().then {
@@ -20,9 +19,9 @@ class HomeViewController: BaseViewController {
     }
     
     private let titleLabel = UILabel().then {
-        $0.text = "간편하게\n수요외출제를\n이용해 보세요!"
+        
+        $0.setLabel(text: "간편하게\n수요외출제를\n이용해 보세요!", fName: "pretendard-SemiBold", size: 28)
         $0.numberOfLines = 3
-        $0.font = UIFont(name: "pretendard-SemiBold", size: 28)
     }
     
     private let titleImage = UIImageView().then {
@@ -33,13 +32,43 @@ class HomeViewController: BaseViewController {
         $0.setButton(color: UIColor.orangeCustom.cgColor, radius: 10)
     }
     
+    private let outingLabel = CustomLabel().then {
+        
+        $0.text = "외출금지"
+        $0.textColor = .red
+        $0.font = UIFont(name: "pretendard-Regular", size: 13)
+        $0.backgroundColor = .white
+        $0.layer.borderColor = UIColor.red.cgColor
+        $0.layer.borderWidth = 1
+        $0.layer.masksToBounds = true
+        $0.layer.cornerRadius = 12
+//        $0.setPadding(UIEdgeInsets(top: 10, left: 15, bottom: 10, right: 15))
+    }
+    
     private let statusView = UIView().then {
         $0.setView(color: UIColor.white.cgColor, cRadius: 10, sRadius: 5, wSize: 0, hSize: 2, sOpacity: 0.1)
     }
     
-    private let studentView = UIView().then {
-        $0.backgroundColor = .lightGrayCustom
+    private let statusLabel1 = UILabel().then {
+        $0.setLabel(text: "현재 183명의 학생 중에서", fName: "pretendard-Regular", size: 14)
+        $0.textColor = .lightGray
     }
+    
+    private let statusLabel2 = UILabel().then {
+        $0.setLabel(text: "48", fName: "pretendard-Regular", size: 20)
+        $0.textColor = .orangeCustom
+    }
+    
+    private let statusLabel3 = UILabel().then {
+        $0.setLabel(text: "명이 외출 중이에요!", fName: "pretendard-Regular", size: 20)
+    }
+    
+    private let statusChevron = UIImageView().then {
+        $0.image = UIImage(systemName: "chevron.right")
+        $0.tintColor = .orangeCustom
+    }
+    
+    private let studentView = UIView()
     
     private let studentView1 = SetStudentView().then {
         $0.setView(color: UIColor.white.cgColor, cRadius: 10, sRadius: 5, wSize: 0, hSize: 2, sOpacity: 0.1)
@@ -58,13 +87,31 @@ class HomeViewController: BaseViewController {
     }
     
     private let lateLabel = UILabel().then {
-        $0.text = "지각의 전당"
+        $0.setLabel(text: "지각의 전당", fName: "pretendard-SemiBold", size: 28)
         $0.textColor = .gray
-        $0.font = UIFont(name: "pretendard-SemiBold", size: 28)
     }
     
     private let myView = UIView().then {
         $0.setView(color: UIColor.white.cgColor, cRadius: 10, sRadius: 5, wSize: 0, hSize: 2, sOpacity: 0.1)
+    }
+    
+    private let myProfileImage = UIImageView().then {
+        $0.image = UIImage(systemName: "person.crop.circle.fill")
+        $0.tintColor = .gray
+    }
+    
+    private let myNameLabel = UILabel().then {
+        $0.setLabel(text: "김주은", fName: "pretendard-Regular", size: 15)
+    }
+    
+    private let myClassNumLabel = UILabel().then {
+        $0.setLabel(text: "2학년 1반 2번", fName: "pretendard-Regular", size: 13)
+        $0.textColor = .lightGray
+    }
+    
+    private let myChevron = UIImageView().then {
+        $0.image = UIImage(systemName: "chevron.right")
+        $0.tintColor = .orangeCustom
     }
     
     override func viewDidLoad() {
@@ -76,8 +123,18 @@ class HomeViewController: BaseViewController {
             view.addSubview($0)
         }
         
+        outingButton.addSubview(outingLabel)
+        
+        [statusLabel1, statusLabel2, statusLabel3, statusChevron].forEach {
+            statusView.addSubview($0)
+        }
+        
         [studentView1, studentView2, studentView3].forEach {
             studentView.addSubview($0)
+        }
+        
+        [myProfileImage, myNameLabel, myClassNumLabel, myChevron].forEach {
+            myView.addSubview($0)
         }
     }
     
@@ -90,8 +147,7 @@ class HomeViewController: BaseViewController {
         profileImage.snp.makeConstraints {
             $0.top.equalTo(view).offset(50)
             $0.right.equalTo(view).inset(30)
-            $0.width.equalTo(28)
-            $0.height.equalTo(28)
+            $0.width.height.equalTo(28)
         }
         
         titleLabel.snp.makeConstraints {
@@ -113,6 +169,12 @@ class HomeViewController: BaseViewController {
             $0.height.equalTo(50)
         }
         
+        outingLabel.snp.makeConstraints {
+            $0.centerX.centerY.equalTo(outingButton)
+            $0.width.equalTo(70)
+            $0.height.equalTo(23)
+        }
+        
         statusView.snp.makeConstraints {
             $0.top.equalTo(titleImage.snp.bottom).offset(20)
             $0.left.equalTo(view).offset(30)
@@ -120,8 +182,30 @@ class HomeViewController: BaseViewController {
             $0.height.equalTo(75)
         }
         
+        statusLabel1.snp.makeConstraints {
+            $0.top.equalTo(statusView).offset(13)
+            $0.left.equalTo(statusView).offset(15)
+        }
+        
+        statusLabel2.snp.makeConstraints {
+            $0.top.equalTo(statusView).offset(35)
+            $0.left.equalTo(statusView).offset(15)
+        }
+
+        statusLabel3.snp.makeConstraints {
+            $0.top.equalTo(statusView).offset(35)
+            $0.left.equalTo(statusView).offset(45)
+        }
+        
+        statusChevron.snp.makeConstraints {
+            $0.centerY.equalTo(statusView)
+            $0.right.equalTo(statusView).inset(20)
+            $0.width.equalTo(15)
+            $0.height.equalTo(20)
+        }
+        
         lateLabel.snp.makeConstraints {
-            $0.bottom.equalTo(studentView.snp.top).offset(-30)
+            $0.bottom.equalTo(studentView.snp.top).offset(-20)
             $0.left.equalTo(view).offset(30)
         }
         
@@ -159,6 +243,29 @@ class HomeViewController: BaseViewController {
             $0.left.equalTo(view).offset(30)
             $0.right.equalTo(view).inset(30)
             $0.height.equalTo(75)
+        }
+        
+        myProfileImage.snp.makeConstraints {
+            $0.centerY.equalTo(myView)
+            $0.left.equalTo(myView).offset(15)
+            $0.width.height.equalTo(50)
+        }
+        
+        myNameLabel.snp.makeConstraints {
+            $0.top.equalTo(myView).offset(20)
+            $0.left.equalTo(myProfileImage.snp.right).offset(15)
+        }
+        
+        myClassNumLabel.snp.makeConstraints {
+            $0.top.equalTo(myNameLabel.snp.bottom).offset(5)
+            $0.left.equalTo(myProfileImage.snp.right).offset(15)
+        }
+        
+        myChevron.snp.makeConstraints {
+            $0.centerY.equalTo(myView)
+            $0.right.equalTo(myView).inset(20)
+            $0.width.equalTo(15)
+            $0.height.equalTo(20)
         }
     }
 }
