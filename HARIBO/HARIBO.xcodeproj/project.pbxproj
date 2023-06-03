@@ -33,7 +33,6 @@
 		9B3683112A29CA000034C58C /* OutingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3683102A29CA000034C58C /* OutingViewController.swift */; };
 		9B3683142A29CA230034C58C /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3683132A29CA230034C58C /* StatusViewController.swift */; };
 		9B3683162A29CAA40034C58C /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3683152A29CAA40034C58C /* UIColor + Extension.swift */; };
-		9B3683192A29D5C50034C58C /* SetStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3683182A29D5C50034C58C /* SetStackView.swift */; };
 		9B36831B2A29D6410034C58C /* SetStudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B36831A2A29D6410034C58C /* SetStudentView.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +63,6 @@
 		9B3683102A29CA000034C58C /* OutingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutingViewController.swift; sourceTree = "<group>"; };
 		9B3683132A29CA230034C58C /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		9B3683152A29CAA40034C58C /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
-		9B3683182A29D5C50034C58C /* SetStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetStackView.swift; sourceTree = "<group>"; };
 		9B36831A2A29D6410034C58C /* SetStudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetStudentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -213,7 +211,6 @@
 		9B3683172A29D5B70034C58C /* Set */ = {
 			isa = PBXGroup;
 			children = (
-				9B3683182A29D5C50034C58C /* SetStackView.swift */,
 				9B36831A2A29D6410034C58C /* SetStudentView.swift */,
 			);
 			path = Set;
@@ -308,7 +305,6 @@
 			files = (
 				9B3682E72A29C37A0034C58C /* HomeViewController.swift in Sources */,
 				9B3682D52A29C2D30034C58C /* HARIBO.xcdatamodeld in Sources */,
-				9B3683192A29D5C50034C58C /* SetStackView.swift in Sources */,
 				9B3682CF2A29C2D30034C58C /* ViewController.swift in Sources */,
 				9B3683162A29CAA40034C58C /* UIColor + Extension.swift in Sources */,
 				9B3683112A29CA000034C58C /* OutingViewController.swift in Sources */,

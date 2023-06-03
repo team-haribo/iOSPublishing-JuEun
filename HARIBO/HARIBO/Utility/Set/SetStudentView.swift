@@ -21,7 +21,7 @@ class SetStudentView: UIView {
             setLayout()
         }
     
-    private let studentView = SetStackView()
+    private let studentView = UIView()
     
     let profileImage = UIImageView().then {
         $0.image = UIImage(systemName: "person.crop.circle.fill")
@@ -37,7 +37,7 @@ class SetStudentView: UIView {
     let classNumLabel = UILabel().then {
         $0.text = "2102"
         $0.textColor = .gray
-        $0.font = UIFont(name: "pretendard_Regular", size: 12)
+        $0.font = UIFont(name: "pretendard-Regular", size: 12)
     }
     
     func addView() {
@@ -49,7 +49,7 @@ class SetStudentView: UIView {
     
     func setLayout() {
         studentView.snp.makeConstraints {
-            $0.width.equalTo(100)
+            $0.width.equalTo(110)
             $0.height.equalTo(130)
             $0.centerX.centerY.equalToSuperview()
         }
@@ -57,17 +57,17 @@ class SetStudentView: UIView {
         profileImage.snp.makeConstraints {
             $0.width.equalTo(50)
             $0.height.equalTo(50)
-            $0.top.equalTo(studentView.snp.top).offset(15)
+            $0.top.equalTo(studentView.snp.top).offset(18)
             $0.centerX.equalTo(studentView)
         }
         
         nameLabel.snp.makeConstraints {
-            $0.top.equalTo(profileImage.snp.bottom).offset(12)
+            $0.top.equalTo(profileImage.snp.bottom).offset(8)
             $0.centerX.equalTo(studentView)
         }
         
         classNumLabel.snp.makeConstraints {
-            $0.top.equalTo(nameLabel.snp.bottom).offset(6)
+            $0.top.equalTo(nameLabel.snp.bottom).offset(4)
             $0.centerX.equalTo(studentView)
         }
     }

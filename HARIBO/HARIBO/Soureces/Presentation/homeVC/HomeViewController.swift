@@ -34,14 +34,28 @@ class HomeViewController: BaseViewController {
     }
     
     private let statusView = UIView().then {
-        $0.setView(color: UIColor.white.cgColor, cRadius: 10, sRadius: 5, wSize: 0, hSize: 0, sOpacity: 0.1)
+        $0.setView(color: UIColor.white.cgColor, cRadius: 10, sRadius: 5, wSize: 0, hSize: 2, sOpacity: 0.1)
     }
     
     private let studentView = UIView().then {
-        $0.setView(color: UIColor.white.cgColor, cRadius: 10, sRadius: 5, wSize: 0, hSize: 0, sOpacity: 0.1)
+        $0.backgroundColor = .lightGrayCustom
     }
     
-    private let studentView1 = SetStudentView()
+    private let studentView1 = SetStudentView().then {
+        $0.setView(color: UIColor.white.cgColor, cRadius: 10, sRadius: 5, wSize: 0, hSize: 2, sOpacity: 0.1)
+    }
+    
+    private let studentView2 = SetStudentView().then {
+        $0.setView(color: UIColor.white.cgColor, cRadius: 10, sRadius: 5, wSize: 0, hSize: 2, sOpacity: 0.1)
+        $0.nameLabel.text = "신아인"
+        $0.classNumLabel.text = "2211"
+    }
+    
+    private let studentView3 = SetStudentView().then {
+        $0.setView(color: UIColor.white.cgColor, cRadius: 10, sRadius: 5, wSize: 0, hSize: 2, sOpacity: 0.1)
+        $0.nameLabel.text = "선민재"
+        $0.classNumLabel.text = "3111"
+    }
     
     private let lateLabel = UILabel().then {
         $0.text = "지각의 전당"
@@ -50,7 +64,7 @@ class HomeViewController: BaseViewController {
     }
     
     private let myView = UIView().then {
-        $0.setView(color: UIColor.white.cgColor, cRadius: 10, sRadius: 5, wSize: 0, hSize: 0, sOpacity: 0.1)
+        $0.setView(color: UIColor.white.cgColor, cRadius: 10, sRadius: 5, wSize: 0, hSize: 2, sOpacity: 0.1)
     }
     
     override func viewDidLoad() {
@@ -60,6 +74,10 @@ class HomeViewController: BaseViewController {
     override func addView() {
         [gomsLabel, profileImage, titleLabel, titleImage, outingButton, statusView, lateLabel, studentView, myView].forEach {
             view.addSubview($0)
+        }
+        
+        [studentView1, studentView2, studentView3].forEach {
+            studentView.addSubview($0)
         }
     }
     
@@ -103,12 +121,41 @@ class HomeViewController: BaseViewController {
         }
         
         lateLabel.snp.makeConstraints {
-            $0.bottom.equalTo(myView).inset(150)
+            $0.bottom.equalTo(studentView.snp.top).offset(-30)
             $0.left.equalTo(view).offset(30)
         }
         
+        studentView.snp.makeConstraints {
+            $0.top.equalTo(lateLabel.snp.bottom).offset(20)
+            $0.left.equalTo(view).offset(30)
+            $0.right.equalTo(view).inset(30)
+            $0.bottom.equalTo(myView.snp.top).offset(-30)
+        }
+        
+        studentView1.snp.makeConstraints {
+            $0.top.equalTo(studentView).offset(0)
+            $0.bottom.equalTo(studentView).inset(0)
+            $0.left.equalTo(studentView).offset(0)
+            $0.right.equalTo(studentView2.snp.left).offset(-14)
+        }
+        
+        studentView2.snp.makeConstraints {
+            $0.width.equalTo(100)
+            $0.height.equalTo(120)
+            $0.top.equalTo(studentView).offset(0)
+            $0.bottom.equalTo(studentView).inset(0)
+            $0.centerX.equalTo(studentView)
+        }
+        
+        studentView3.snp.makeConstraints {
+            $0.top.equalTo(studentView).offset(0)
+            $0.bottom.equalTo(studentView).inset(0)
+            $0.left.equalTo(studentView2.snp.right).offset(14)
+            $0.right.equalTo(studentView).inset(0)
+        }
+        
         myView.snp.makeConstraints {
-            $0.bottom.equalTo(view).inset(140)
+            $0.bottom.equalTo(view).inset(130)
             $0.left.equalTo(view).offset(30)
             $0.right.equalTo(view).inset(30)
             $0.height.equalTo(75)
