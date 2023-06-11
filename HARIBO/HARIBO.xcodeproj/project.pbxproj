@@ -34,6 +34,8 @@
 		9B3683142A29CA230034C58C /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3683132A29CA230034C58C /* StatusViewController.swift */; };
 		9B3683162A29CAA40034C58C /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3683152A29CAA40034C58C /* UIColor + Extension.swift */; };
 		9B36831B2A29D6410034C58C /* SetStudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B36831A2A29D6410034C58C /* SetStudentView.swift */; };
+		9BA0E52E2A361A05001CF252 /* SetStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA0E52D2A361A05001CF252 /* SetStackView.swift */; };
+		9BC6BFA52A34B7C100AE73E8 /* StudentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC6BFA42A34B7C100AE73E8 /* StudentCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		9B3683132A29CA230034C58C /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		9B3683152A29CAA40034C58C /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
 		9B36831A2A29D6410034C58C /* SetStudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetStudentView.swift; sourceTree = "<group>"; };
+		9BA0E52D2A361A05001CF252 /* SetStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetStackView.swift; sourceTree = "<group>"; };
+		9BC6BFA42A34B7C100AE73E8 /* StudentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,7 @@
 		9B3682E52A29C36C0034C58C /* homeVC */ = {
 			isa = PBXGroup;
 			children = (
+				9BA0E52C2A36197D001CF252 /* Cell */,
 				9B3682E62A29C37A0034C58C /* HomeViewController.swift */,
 			);
 			path = homeVC;
@@ -212,8 +217,17 @@
 			isa = PBXGroup;
 			children = (
 				9B36831A2A29D6410034C58C /* SetStudentView.swift */,
+				9BA0E52D2A361A05001CF252 /* SetStackView.swift */,
 			);
 			path = Set;
+			sourceTree = "<group>";
+		};
+		9BA0E52C2A36197D001CF252 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9BC6BFA42A34B7C100AE73E8 /* StudentCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,7 +319,9 @@
 			files = (
 				9B3682E72A29C37A0034C58C /* HomeViewController.swift in Sources */,
 				9B3682D52A29C2D30034C58C /* HARIBO.xcdatamodeld in Sources */,
+				9BC6BFA52A34B7C100AE73E8 /* StudentCollectionViewCell.swift in Sources */,
 				9B3682CF2A29C2D30034C58C /* ViewController.swift in Sources */,
+				9BA0E52E2A361A05001CF252 /* SetStackView.swift in Sources */,
 				9B3683162A29CAA40034C58C /* UIColor + Extension.swift in Sources */,
 				9B3683112A29CA000034C58C /* OutingViewController.swift in Sources */,
 				9B3683142A29CA230034C58C /* StatusViewController.swift in Sources */,

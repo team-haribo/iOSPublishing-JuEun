@@ -1,10 +1,3 @@
-//
-//  HomeViewController.swift
-//  HARIBO
-//
-//  Created by 김주은 on 2023/06/02.
-//
-
 import UIKit
 
 class HomeViewController: BaseViewController {
@@ -42,7 +35,6 @@ class HomeViewController: BaseViewController {
         $0.layer.borderWidth = 1
         $0.layer.masksToBounds = true
         $0.layer.cornerRadius = 12
-//        $0.setPadding(UIEdgeInsets(top: 10, left: 15, bottom: 10, right: 15))
     }
     
     private let statusView = UIView().then {
@@ -68,23 +60,13 @@ class HomeViewController: BaseViewController {
         $0.tintColor = .orangeCustom
     }
     
-    private let studentView = UIView()
-    
-    private let studentView1 = SetStudentView().then {
-        $0.setView(color: UIColor.white.cgColor, cRadius: 10, sRadius: 5, wSize: 0, hSize: 2, sOpacity: 0.1)
-    }
-    
-    private let studentView2 = SetStudentView().then {
-        $0.setView(color: UIColor.white.cgColor, cRadius: 10, sRadius: 5, wSize: 0, hSize: 2, sOpacity: 0.1)
-        $0.nameLabel.text = "신아인"
-        $0.classNumLabel.text = "2211"
-    }
-    
-    private let studentView3 = SetStudentView().then {
-        $0.setView(color: UIColor.white.cgColor, cRadius: 10, sRadius: 5, wSize: 0, hSize: 2, sOpacity: 0.1)
-        $0.nameLabel.text = "선민재"
-        $0.classNumLabel.text = "3111"
-    }
+    private let collectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.backgroundColor = .clear
+        return collectionView
+    }()
     
     private let lateLabel = UILabel().then {
         $0.setLabel(text: "지각의 전당", fName: "pretendard-SemiBold", size: 28)
@@ -119,7 +101,11 @@ class HomeViewController: BaseViewController {
     }
     
     override func addView() {
-        [gomsLabel, profileImage, titleLabel, titleImage, outingButton, statusView, lateLabel, studentView, myView].forEach {
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.register(StudentCollectionViewCell.self, forCellWithReuseIdentifier: "StudentsCollectionViewCell")
+        
+        [gomsLabel, profileImage, titleLabel, titleImage, outingButton, statusView, lateLabel, collectionView, myView].forEach {
             view.addSubview($0)
         }
         
@@ -127,10 +113,6 @@ class HomeViewController: BaseViewController {
         
         [statusLabel1, statusLabel2, statusLabel3, statusChevron].forEach {
             statusView.addSubview($0)
-        }
-        
-        [studentView1, studentView2, studentView3].forEach {
-            studentView.addSubview($0)
         }
         
         [myProfileImage, myNameLabel, myClassNumLabel, myChevron].forEach {
@@ -205,37 +187,16 @@ class HomeViewController: BaseViewController {
         }
         
         lateLabel.snp.makeConstraints {
-            $0.bottom.equalTo(studentView.snp.top).offset(-20)
+            $0.bottom.equalTo(collectionView.snp.top).offset(-20)
             $0.left.equalTo(view).offset(30)
         }
         
-        studentView.snp.makeConstraints {
+        collectionView.snp.makeConstraints {
             $0.top.equalTo(lateLabel.snp.bottom).offset(20)
             $0.left.equalTo(view).offset(30)
             $0.right.equalTo(view).inset(30)
             $0.bottom.equalTo(myView.snp.top).offset(-30)
-        }
-        
-        studentView1.snp.makeConstraints {
-            $0.top.equalTo(studentView).offset(0)
-            $0.bottom.equalTo(studentView).inset(0)
-            $0.left.equalTo(studentView).offset(0)
-            $0.right.equalTo(studentView2.snp.left).offset(-14)
-        }
-        
-        studentView2.snp.makeConstraints {
-            $0.width.equalTo(100)
-            $0.height.equalTo(120)
-            $0.top.equalTo(studentView).offset(0)
-            $0.bottom.equalTo(studentView).inset(0)
-            $0.centerX.equalTo(studentView)
-        }
-        
-        studentView3.snp.makeConstraints {
-            $0.top.equalTo(studentView).offset(0)
-            $0.bottom.equalTo(studentView).inset(0)
-            $0.left.equalTo(studentView2.snp.right).offset(14)
-            $0.right.equalTo(studentView).inset(0)
+            $0.height.equalTo(140)
         }
         
         myView.snp.makeConstraints {
@@ -267,5 +228,45 @@ class HomeViewController: BaseViewController {
             $0.width.equalTo(15)
             $0.height.equalTo(20)
         }
+    }
+}
+
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StudentsCollectionViewCell", for: indexPath) as! StudentCollectionViewCell
+        
+        let nameLabel: String
+        let classNumLabel: String
+        
+        if indexPath.item == 0 {
+            nameLabel = "김주은"
+            classNumLabel = "2102"
+        }
+        else if indexPath.item == 1 {
+            nameLabel = "신아인"
+            classNumLabel = "2211"
+        }
+        else {
+            nameLabel = "선민재"
+            classNumLabel = "3111"
+        }
+        
+        cell.nameLabel.text = nameLabel
+        cell.classNumLabel.text = classNumLabel
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 100, height: 130)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 15
     }
 }
