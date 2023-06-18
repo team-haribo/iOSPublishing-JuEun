@@ -11,22 +11,12 @@
 		9B3682CD2A29C2D30034C58C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3682CC2A29C2D30034C58C /* SceneDelegate.swift */; };
 		9B3682CF2A29C2D30034C58C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3682CE2A29C2D30034C58C /* ViewController.swift */; };
 		9B3682D52A29C2D30034C58C /* HARIBO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B3682D32A29C2D30034C58C /* HARIBO.xcdatamodeld */; };
-		9B3682D72A29C2D40034C58C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B3682D62A29C2D40034C58C /* Assets.xcassets */; };
 		9B3682DA2A29C2D40034C58C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B3682D82A29C2D40034C58C /* LaunchScreen.storyboard */; };
 		9B3682E72A29C37A0034C58C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3682E62A29C37A0034C58C /* HomeViewController.swift */; };
 		9B3682EB2A29C4810034C58C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3682EA2A29C4810034C58C /* BaseViewController.swift */; };
 		9B3682EE2A29C5070034C58C /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 9B3682ED2A29C5070034C58C /* Then */; };
 		9B3682F12A29C50F0034C58C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9B3682F02A29C50F0034C58C /* SnapKit */; };
 		9B3682F42A29C6610034C58C /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3682F32A29C6610034C58C /* UIView + Extension.swift */; };
-		9B3682FF2A29C76D0034C58C /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3682F62A29C76D0034C58C /* Pretendard-Bold.otf */; };
-		9B3683002A29C76D0034C58C /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3682F72A29C76D0034C58C /* Pretendard-ExtraBold.otf */; };
-		9B3683012A29C76D0034C58C /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3682F82A29C76D0034C58C /* Pretendard-Black.otf */; };
-		9B3683022A29C76D0034C58C /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3682F92A29C76D0034C58C /* Pretendard-Medium.otf */; };
-		9B3683032A29C76D0034C58C /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3682FA2A29C76D0034C58C /* Pretendard-Thin.otf */; };
-		9B3683042A29C76D0034C58C /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3682FB2A29C76D0034C58C /* Pretendard-Light.otf */; };
-		9B3683052A29C76D0034C58C /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3682FC2A29C76D0034C58C /* Pretendard-Regular.otf */; };
-		9B3683062A29C76D0034C58C /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3682FD2A29C76D0034C58C /* Pretendard-ExtraLight.otf */; };
-		9B3683072A29C76D0034C58C /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3682FE2A29C76D0034C58C /* Pretendard-SemiBold.otf */; };
 		9B3683092A29C8290034C58C /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3683082A29C8290034C58C /* UIButton + Extension.swift */; };
 		9B36830C2A29C83F0034C58C /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B36830B2A29C83F0034C58C /* UILabel + Extension.swift */; };
 		9B36830F2A29C8A00034C58C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B36830E2A29C8A00034C58C /* TabBarViewController.swift */; };
@@ -34,8 +24,19 @@
 		9B3683142A29CA230034C58C /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3683132A29CA230034C58C /* StatusViewController.swift */; };
 		9B3683162A29CAA40034C58C /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3683152A29CAA40034C58C /* UIColor + Extension.swift */; };
 		9B36831B2A29D6410034C58C /* SetStudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B36831A2A29D6410034C58C /* SetStudentView.swift */; };
+		9B7DEF492A38647900C50F1C /* GAuthSignin in Frameworks */ = {isa = PBXBuildFile; productRef = 9B7DEF482A38647900C50F1C /* GAuthSignin */; };
+		9B7DEF4C2A3A092000C50F1C /* IntroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7DEF4B2A3A092000C50F1C /* IntroViewModel.swift */; };
 		9BA0E52E2A361A05001CF252 /* SetStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA0E52D2A361A05001CF252 /* SetStackView.swift */; };
+		9BA0E5312A370BE0001CF252 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA0E5302A370BE0001CF252 /* IntroViewController.swift */; };
+		9BA0E5382A370E7F001CF252 /* SF-Pro-Text-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9BA0E5322A370E7E001CF252 /* SF-Pro-Text-Thin.otf */; };
+		9BA0E5392A370E7F001CF252 /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9BA0E5332A370E7E001CF252 /* SF-Pro-Text-Bold.otf */; };
+		9BA0E53A2A370E7F001CF252 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9BA0E5342A370E7E001CF252 /* SF-Pro-Text-Regular.otf */; };
+		9BA0E53B2A370E7F001CF252 /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9BA0E5352A370E7E001CF252 /* SF-Pro-Text-Light.otf */; };
+		9BA0E53C2A370E7F001CF252 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9BA0E5362A370E7F001CF252 /* SF-Pro-Text-Medium.otf */; };
+		9BA0E53D2A370E7F001CF252 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9BA0E5372A370E7F001CF252 /* SF-Pro-Text-Semibold.otf */; };
 		9BC6BFA52A34B7C100AE73E8 /* StudentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC6BFA42A34B7C100AE73E8 /* StudentCollectionViewCell.swift */; };
+		9BDBE0F42A372DC800E73F31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BDBE0F32A372DC800E73F31 /* Assets.xcassets */; };
+		9BDBE0F82A372E3700E73F31 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDBE0F72A372E3700E73F31 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,21 +45,11 @@
 		9B3682CC2A29C2D30034C58C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9B3682CE2A29C2D30034C58C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9B3682D42A29C2D30034C58C /* HARIBO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HARIBO.xcdatamodel; sourceTree = "<group>"; };
-		9B3682D62A29C2D40034C58C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B3682D92A29C2D40034C58C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B3682DB2A29C2D40034C58C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B3682E62A29C37A0034C58C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9B3682EA2A29C4810034C58C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		9B3682F32A29C6610034C58C /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
-		9B3682F62A29C76D0034C58C /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
-		9B3682F72A29C76D0034C58C /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
-		9B3682F82A29C76D0034C58C /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
-		9B3682F92A29C76D0034C58C /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
-		9B3682FA2A29C76D0034C58C /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
-		9B3682FB2A29C76D0034C58C /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
-		9B3682FC2A29C76D0034C58C /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
-		9B3682FD2A29C76D0034C58C /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
-		9B3682FE2A29C76D0034C58C /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 		9B3683082A29C8290034C58C /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
 		9B36830B2A29C83F0034C58C /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
 		9B36830E2A29C8A00034C58C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -66,8 +57,18 @@
 		9B3683132A29CA230034C58C /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		9B3683152A29CAA40034C58C /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
 		9B36831A2A29D6410034C58C /* SetStudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetStudentView.swift; sourceTree = "<group>"; };
+		9B7DEF4B2A3A092000C50F1C /* IntroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewModel.swift; sourceTree = "<group>"; };
 		9BA0E52D2A361A05001CF252 /* SetStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetStackView.swift; sourceTree = "<group>"; };
+		9BA0E5302A370BE0001CF252 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		9BA0E5322A370E7E001CF252 /* SF-Pro-Text-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Thin.otf"; sourceTree = "<group>"; };
+		9BA0E5332A370E7E001CF252 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		9BA0E5342A370E7E001CF252 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		9BA0E5352A370E7E001CF252 /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
+		9BA0E5362A370E7F001CF252 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		9BA0E5372A370E7F001CF252 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
 		9BC6BFA42A34B7C100AE73E8 /* StudentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCollectionViewCell.swift; sourceTree = "<group>"; };
+		9BDBE0F32A372DC800E73F31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BDBE0F72A372E3700E73F31 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 			files = (
 				9B3682EE2A29C5070034C58C /* Then in Frameworks */,
 				9B3682F12A29C50F0034C58C /* SnapKit in Frameworks */,
+				9B7DEF492A38647900C50F1C /* GAuthSignin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,8 +108,8 @@
 				9B3682E22A29C3420034C58C /* Soureces */,
 				9B3682E12A29C3370034C58C /* App */,
 				9B3682CE2A29C2D30034C58C /* ViewController.swift */,
-				9B3682D62A29C2D40034C58C /* Assets.xcassets */,
 				9B3682D82A29C2D40034C58C /* LaunchScreen.storyboard */,
+				9BDBE0F32A372DC800E73F31 /* Assets.xcassets */,
 				9B3682DB2A29C2D40034C58C /* Info.plist */,
 				9B3682D32A29C2D30034C58C /* HARIBO.xcdatamodeld */,
 			);
@@ -126,6 +128,7 @@
 		9B3682E22A29C3420034C58C /* Soureces */ = {
 			isa = PBXGroup;
 			children = (
+				9BDBE0F72A372E3700E73F31 /* Package.swift */,
 				9B36830E2A29C8A00034C58C /* TabBarViewController.swift */,
 				9B3682E92A29C4730034C58C /* BaseVC */,
 				9B3682E32A29C34F0034C58C /* Presentation */,
@@ -136,9 +139,10 @@
 		9B3682E32A29C34F0034C58C /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				9B3683122A29CA160034C58C /* statusVC */,
-				9B3682E82A29C45C0034C58C /* outingVC */,
-				9B3682E52A29C36C0034C58C /* homeVC */,
+				9BA0E52F2A370BD0001CF252 /* Intro */,
+				9B3683122A29CA160034C58C /* StatusVC */,
+				9B3682E82A29C45C0034C58C /* OutingVC */,
+				9B3682E52A29C36C0034C58C /* Home */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -153,21 +157,21 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
-		9B3682E52A29C36C0034C58C /* homeVC */ = {
+		9B3682E52A29C36C0034C58C /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				9BA0E52C2A36197D001CF252 /* Cell */,
 				9B3682E62A29C37A0034C58C /* HomeViewController.swift */,
 			);
-			path = homeVC;
+			path = Home;
 			sourceTree = "<group>";
 		};
-		9B3682E82A29C45C0034C58C /* outingVC */ = {
+		9B3682E82A29C45C0034C58C /* OutingVC */ = {
 			isa = PBXGroup;
 			children = (
 				9B3683102A29CA000034C58C /* OutingViewController.swift */,
 			);
-			path = outingVC;
+			path = OutingVC;
 			sourceTree = "<group>";
 		};
 		9B3682E92A29C4730034C58C /* BaseVC */ = {
@@ -192,25 +196,22 @@
 		9B3682F52A29C7460034C58C /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				9B3682F82A29C76D0034C58C /* Pretendard-Black.otf */,
-				9B3682F62A29C76D0034C58C /* Pretendard-Bold.otf */,
-				9B3682F72A29C76D0034C58C /* Pretendard-ExtraBold.otf */,
-				9B3682FD2A29C76D0034C58C /* Pretendard-ExtraLight.otf */,
-				9B3682FB2A29C76D0034C58C /* Pretendard-Light.otf */,
-				9B3682F92A29C76D0034C58C /* Pretendard-Medium.otf */,
-				9B3682FC2A29C76D0034C58C /* Pretendard-Regular.otf */,
-				9B3682FE2A29C76D0034C58C /* Pretendard-SemiBold.otf */,
-				9B3682FA2A29C76D0034C58C /* Pretendard-Thin.otf */,
+				9BA0E5332A370E7E001CF252 /* SF-Pro-Text-Bold.otf */,
+				9BA0E5352A370E7E001CF252 /* SF-Pro-Text-Light.otf */,
+				9BA0E5362A370E7F001CF252 /* SF-Pro-Text-Medium.otf */,
+				9BA0E5342A370E7E001CF252 /* SF-Pro-Text-Regular.otf */,
+				9BA0E5372A370E7F001CF252 /* SF-Pro-Text-Semibold.otf */,
+				9BA0E5322A370E7E001CF252 /* SF-Pro-Text-Thin.otf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
 		};
-		9B3683122A29CA160034C58C /* statusVC */ = {
+		9B3683122A29CA160034C58C /* StatusVC */ = {
 			isa = PBXGroup;
 			children = (
 				9B3683132A29CA230034C58C /* StatusViewController.swift */,
 			);
-			path = statusVC;
+			path = StatusVC;
 			sourceTree = "<group>";
 		};
 		9B3683172A29D5B70034C58C /* Set */ = {
@@ -222,12 +223,37 @@
 			path = Set;
 			sourceTree = "<group>";
 		};
+		9B7DEF4A2A3A090C00C50F1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B7DEF4B2A3A092000C50F1C /* IntroViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B7DEF4D2A3AFF1600C50F1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9BA0E5302A370BE0001CF252 /* IntroViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9BA0E52C2A36197D001CF252 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				9BC6BFA42A34B7C100AE73E8 /* StudentCollectionViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		9BA0E52F2A370BD0001CF252 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				9B7DEF4D2A3AFF1600C50F1C /* View */,
+				9B7DEF4A2A3A090C00C50F1C /* Model */,
+			);
+			path = Intro;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +275,7 @@
 			packageProductDependencies = (
 				9B3682ED2A29C5070034C58C /* Then */,
 				9B3682F02A29C50F0034C58C /* SnapKit */,
+				9B7DEF482A38647900C50F1C /* GAuthSignin */,
 			);
 			productName = HARIBO;
 			productReference = 9B3682C72A29C2D30034C58C /* HARIBO.app */;
@@ -281,6 +308,7 @@
 			packageReferences = (
 				9B3682EC2A29C5070034C58C /* XCRemoteSwiftPackageReference "Then" */,
 				9B3682EF2A29C50F0034C58C /* XCRemoteSwiftPackageReference "SnapKit" */,
+				9B7DEF472A38647900C50F1C /* XCRemoteSwiftPackageReference "GAuthSignin-Swift" */,
 			);
 			productRefGroup = 9B3682C82A29C2D30034C58C /* Products */;
 			projectDirPath = "";
@@ -296,17 +324,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B3683072A29C76D0034C58C /* Pretendard-SemiBold.otf in Resources */,
 				9B3682DA2A29C2D40034C58C /* LaunchScreen.storyboard in Resources */,
-				9B3683042A29C76D0034C58C /* Pretendard-Light.otf in Resources */,
-				9B3683062A29C76D0034C58C /* Pretendard-ExtraLight.otf in Resources */,
-				9B3682FF2A29C76D0034C58C /* Pretendard-Bold.otf in Resources */,
-				9B3683032A29C76D0034C58C /* Pretendard-Thin.otf in Resources */,
-				9B3683052A29C76D0034C58C /* Pretendard-Regular.otf in Resources */,
-				9B3683002A29C76D0034C58C /* Pretendard-ExtraBold.otf in Resources */,
-				9B3682D72A29C2D40034C58C /* Assets.xcassets in Resources */,
-				9B3683012A29C76D0034C58C /* Pretendard-Black.otf in Resources */,
-				9B3683022A29C76D0034C58C /* Pretendard-Medium.otf in Resources */,
+				9BA0E53A2A370E7F001CF252 /* SF-Pro-Text-Regular.otf in Resources */,
+				9BA0E53B2A370E7F001CF252 /* SF-Pro-Text-Light.otf in Resources */,
+				9BA0E53D2A370E7F001CF252 /* SF-Pro-Text-Semibold.otf in Resources */,
+				9BA0E5392A370E7F001CF252 /* SF-Pro-Text-Bold.otf in Resources */,
+				9BA0E53C2A370E7F001CF252 /* SF-Pro-Text-Medium.otf in Resources */,
+				9BDBE0F42A372DC800E73F31 /* Assets.xcassets in Resources */,
+				9BA0E5382A370E7F001CF252 /* SF-Pro-Text-Thin.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,10 +349,13 @@
 				9BA0E52E2A361A05001CF252 /* SetStackView.swift in Sources */,
 				9B3683162A29CAA40034C58C /* UIColor + Extension.swift in Sources */,
 				9B3683112A29CA000034C58C /* OutingViewController.swift in Sources */,
+				9BA0E5312A370BE0001CF252 /* IntroViewController.swift in Sources */,
 				9B3683142A29CA230034C58C /* StatusViewController.swift in Sources */,
 				9B3682CB2A29C2D30034C58C /* AppDelegate.swift in Sources */,
 				9B3682F42A29C6610034C58C /* UIView + Extension.swift in Sources */,
 				9B36831B2A29D6410034C58C /* SetStudentView.swift in Sources */,
+				9BDBE0F82A372E3700E73F31 /* Package.swift in Sources */,
+				9B7DEF4C2A3A092000C50F1C /* IntroViewModel.swift in Sources */,
 				9B3682CD2A29C2D30034C58C /* SceneDelegate.swift in Sources */,
 				9B36830C2A29C83F0034C58C /* UILabel + Extension.swift in Sources */,
 				9B3682EB2A29C4810034C58C /* BaseViewController.swift in Sources */,
@@ -556,6 +584,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		9B7DEF472A38647900C50F1C /* XCRemoteSwiftPackageReference "GAuthSignin-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GSM-MSG/GAuthSignin-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -568,6 +604,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9B3682EF2A29C50F0034C58C /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		9B7DEF482A38647900C50F1C /* GAuthSignin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B7DEF472A38647900C50F1C /* XCRemoteSwiftPackageReference "GAuthSignin-Swift" */;
+			productName = GAuthSignin;
 		};
 /* End XCSwiftPackageProductDependency section */
 

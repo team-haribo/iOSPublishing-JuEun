@@ -12,4 +12,8 @@ extension UIButton {
         self.layer.backgroundColor = color
         self.layer.cornerRadius = radius
     }
+    
+//    func GAuthButton (auth: GAuthType, color: GAuthColorType, rounded: GAuthRounrdedType) {
+//
+//    }
 }
