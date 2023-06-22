@@ -30,7 +30,7 @@ class IntroViewController: BaseViewController {
     let gauthButton = GAuthButton(auth: .signup, color: .colored, rounded: .default)
     var clientID = "my_client_id"
     var redirectURI = "my_redirect_uri"
-    var viewModel: IntroViewModel?
+    var viewModel: SignInViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,7 +77,7 @@ class IntroViewController: BaseViewController {
     }
     
     func setupViewModel() {
-        viewModel = IntroViewModel(clientID: clientID, redirectURI: redirectURI)
+        viewModel = SignInViewModel(clientID: clientID, redirectURI: redirectURI)
             
         if let completion = viewModel?.handleGAuthCode {
             gauthButton.prepare(
